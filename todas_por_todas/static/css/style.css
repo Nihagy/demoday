@@ -13,9 +13,7 @@
 }
 
 
-/* Padrão independente do item */
-
-
+/* Padrão */
 
 li{
     list-style: none;
@@ -33,12 +31,12 @@ header{
     transition: all 0.5s ease;
 }
 
-.tam_max{
+.header-max{
     background-color: #df4b6f;
     height: 100px;
 }
 
-.tam_min{
+.header-min{
     background-color: #c9859f;
     height: 80px;
 }
@@ -59,16 +57,38 @@ nav ul li img{
     height: 30px;
 }
 
+main{
+    font-size: 20px;
+}
+
+main section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: "roboto";
+    font-size: 40px;
+    color: #df4b6f;
+}
+
+main section:nth-child(odd){
+    height: 100vh;
+    background-color: #fcebf3;
+}
+main section:nth-child(even){
+    height: 100vh;
+    background-color: #f3c7d8;
+}
+
 
 .logo{
     grid-area: logo;
 }
 
-.logo_max img{
+.logo-max img{
     width: 320px;
 }
 
-.logo_min img{
+.logo-min img{
     width: 280px;
 }
 
@@ -90,12 +110,12 @@ nav ul{
     grid-gap: 20px;
 }
 
-.nav_max a{
+.nav-max a{
     font-size: 20px;
     color: #f3c7d8;
 }
 
-.nav_min a{
+.nav-min a{
     font-size: 18px;
     color: #df4b6f;
 }
@@ -110,11 +130,11 @@ footer{
     background-color: #fcebf3;
 }
 
-.logo_max img{
+.logo-max img{
     width: 220px;
 }
 
-.logo_min img{
+.logo-min img{
     width: 180px;
 }
 
@@ -125,6 +145,9 @@ footer{
 .menu-min{
     background-color: #df4b6f;
 }
+
+/* ============================== */
+
 
 /* Fim do Menu Hambuguer*/
 @media(max-width: 767px){
@@ -171,27 +194,27 @@ footer{
         padding: 20px;
     }
 
-    .nav_max li:last-child{
+    .nav-max li:last-child{
         margin-top: calc(100vh - (80px + 320px));
     }
 
-    .nav_min li:last-child{
+    .nav-min li:last-child{
         margin-top: calc(100vh - (60px + 320px));
     }
 
-    .nav_max{
+    .nav-max{
         top:80px;
     }
 
-    .nav_min{
+    .nav-min{
         top:60px;
     }
 
-    .nav_max, .nav_max ul, .nav_max div{
+    .nav-max, .nav-max ul, .nav-max div{
         height: calc(100vh - 80px);
     }
 
-    .nav_min, .nav_min ul, .nav_min div{
+    .nav-min, .nav-min ul, .nav-min div{
         height: calc(100vh - 60px);
     }
 
@@ -199,15 +222,15 @@ footer{
         transform: translateX(0);
     }
 
-    .tam_max{
+    .header-max{
         height: 80px;
     }
     
-    .tam_min{
+    .header-min{
         height: 60px;
     }
 
-    .nav_min a{
+    .nav-min a{
         font-size: 20px;
         color: #f3c7d8;
     }
@@ -228,6 +251,7 @@ footer{
     }
 
 }
+
 
 @media(min-width: 768px){
 
@@ -289,29 +313,4 @@ footer{
         margin-right: 20px;
     }
 
-}
-
-
-
-
-main{
-    font-size: 20px;
-}
-
-main section{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    font-family: "roboto";
-    font-size: 40px;
-    color: #df4b6f;
-}
-
-main section:nth-child(odd){
-    height: 100vh;
-    background-color: #fcebf3;
-}
-main section:nth-child(even){
-    height: 100vh;
-    background-color: #f3c7d8;
 }

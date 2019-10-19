@@ -1,0 +1,47 @@
+{% load staticfiles %}
+
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Estilo customizado diferente da pagina principal-->
+    <link rel="stylesheet" href="{% static 'css/slogin.css' %}">
+    <title>Login TPT</title>
+</head>
+
+<body>
+    <a href="..">Voltar para a página principal</a>
+
+    <div id="login">
+
+        <img src="{% static 'images/perfil.svg' %}">	
+        
+        <form>
+            
+            <div>
+                <input class="email" type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div>
+                <input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha" required >
+            </div>
+
+            <div>
+                <input class="btn-logar" type="submit" value="Logar">
+            </div>
+
+            <div>
+                <a href="#">esqueceu a senha?</a>
+            </div>
+
+        </form>
+        
+    </div>
+    
+    
+</body>
+
+</html>

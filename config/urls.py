@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from todas_por_todas import views
 
+
+# troca o caminho das url pelo caminha que ta com aspas
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
+    path('login/', views.login),
 ]
