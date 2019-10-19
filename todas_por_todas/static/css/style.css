@@ -1,0 +1,317 @@
+/* Adicionando fonte robot como padrão no site */
+
+@font-face {
+    src: url('../font/Roboto-Regular.ttf');
+    font-family: 'roboto';
+}
+
+/* resetando todos os elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Padrão independente do item */
+
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.tam_max{
+    background-color: #df4b6f;
+    height: 100px;
+}
+
+.tam_min{
+    background-color: #c9859f;
+    height: 80px;
+}
+
+#menu-logo{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas: "logo ... nav" ;
+    grid-template-columns: auto 1fr auto;
+    align-content: center;
+}
+
+nav ul li img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.logo{
+    grid-area: logo;
+}
+
+.logo_max img{
+    width: 320px;
+}
+
+.logo_min img{
+    width: 280px;
+}
+
+nav{
+    grid-area: nav;
+    display: grid;
+    align-items: center;
+}
+
+nav a{
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+
+nav ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+
+.nav_max a{
+    font-size: 20px;
+    color: #f3c7d8;
+}
+
+.nav_min a{
+    font-size: 18px;
+    color: #df4b6f;
+}
+
+footer{
+    height: 50px;
+}
+
+.fundo-falso{
+    width: 100%;
+    height: 100px;
+    background-color: #fcebf3;
+}
+
+.logo_max img{
+    width: 220px;
+}
+
+.logo_min img{
+    width: 180px;
+}
+
+.menu-max{
+    background-color: #f3c7d8;
+}
+
+.menu-min{
+    background-color: #df4b6f;
+}
+
+/* Fim do Menu Hambuguer*/
+@media(max-width: 767px){
+
+        #menu-logo{
+        position: relative;
+        padding: 0 16px;
+        grid-template-areas: "logo ... menu" ;
+    }
+
+    #menu-logo{
+        position: relative;
+        padding: 0 16px;
+        grid-template-areas: "logo ... menu" ;
+    }
+
+    nav{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        transform: translateX(100%);
+        transition: .8s ease-out;
+        grid-auto-flow: column;
+    }
+    
+    nav div{
+        position: absolute;
+        width: 50%;
+        background-color: #352f31;
+        opacity: 0.3 ;
+    }
+
+    nav ul{
+        display: inline-block;
+        flex-direction: column;
+        position: absolute;
+        width: 50%;
+        background-color: #df4b6f;
+        right: 0;
+    }
+
+    nav li{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nav_max li:last-child{
+        margin-top: calc(100vh - (80px + 320px));
+    }
+
+    .nav_min li:last-child{
+        margin-top: calc(100vh - (60px + 320px));
+    }
+
+    .nav_max{
+        top:80px;
+    }
+
+    .nav_min{
+        top:60px;
+    }
+
+    .nav_max, .nav_max ul, .nav_max div{
+        height: calc(100vh - 80px);
+    }
+
+    .nav_min, .nav_min ul, .nav_min div{
+        height: calc(100vh - 60px);
+    }
+
+    .menu-visivel{
+        transform: translateX(0);
+    }
+
+    .tam_max{
+        height: 80px;
+    }
+    
+    .tam_min{
+        height: 60px;
+    }
+
+    .nav_min a{
+        font-size: 20px;
+        color: #f3c7d8;
+    }
+    
+    .menu{
+        grid-area: menu;
+        display: grid;
+        align-content: center;
+        transition: all .8s ease-out;
+    }
+
+    .menu span{
+            display: grid;
+            height: 3px;
+            width: 30px;
+            margin: 3px;
+            transition: all .8s ease-out;
+    }
+
+}
+
+@media(min-width: 768px){
+
+    nav a::before{
+        /* currentColor pega a cor do elemento pai no caso seria os link que é o "a" do html*/
+        background-color: currentColor;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: -3px;
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 0.3s ease-out;
+    }
+    
+    nav a:hover::before{
+        transform: scaleX(1);
+    }
+    
+    nav a::after{
+        background-color: currentColor;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        bottom: -3px;
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.3s ease-out;
+    }
+    
+    nav a:hover::after{
+        transform: scaleX(1);
+    }
+    
+    footer{
+        height: 50px;
+    }
+    
+    .fundo-falso{
+        width: 100%;
+        height: 100px;
+        background-color: #fcebf3;
+    }
+
+    nav ul{
+        display: flex;
+        margin-right: -50px;
+    }
+
+    nav li{
+        padding-left: 20px;
+    }
+
+    nav img{
+        margin-right: 20px;
+    }
+
+}
+
+
+
+
+main{
+    font-size: 20px;
+}
+
+main section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: "roboto";
+    font-size: 40px;
+    color: #df4b6f;
+}
+
+main section:nth-child(odd){
+    height: 100vh;
+    background-color: #fcebf3;
+}
+main section:nth-child(even){
+    height: 100vh;
+    background-color: #f3c7d8;
+}
