@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+.Python
+
+# Django stuff:
+# *.log
+# local_settings.py
+# db.sqlite3
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# mypy
+.mypy_cache/
+
+#IDEs
+.vscode
+.idea
+
+Pipfile
