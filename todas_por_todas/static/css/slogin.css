@@ -131,5 +131,39 @@
 
 @media(min-width: 1024px){
     
+    #login{
+        height: 400px;
+        margin-top: 20vh;
+    }
+
+    #login img{
+        width: 200px;
+        height: 200px;
+        margin-top: -100px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-logar{
+        margin-top: 20px;
+        height: 50px;   
+    }
+    
+    a{
+        font-size: 20px;
+        margin: 30px 20px ;
+    }
+
+    #voltar{
+        font-size: 20px;
+        margin: 50px 50px ;
+    }
+
+    input{
+        height: 50px;
+        background-position: 10px;
+        margin-bottom: 10px;
+        padding-left: 40px;
+    }
+
 }
 
