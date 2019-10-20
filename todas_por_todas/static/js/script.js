@@ -59,3 +59,8 @@ function navegarMenu(event){
         mostrarMenu()
     }
 }
+
+
+// ========================================
+// efeito na figure
+	
