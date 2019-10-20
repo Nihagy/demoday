@@ -1,67 +1,135 @@
 
 
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #df4b6fff;
-    margin: 0;
-    padding: 0;
+@media(min-width: 320px){
+    
+    #login{
+        width: 300px;
+        height: 230px;
+        background-color: rgba(255,255,255,0.3);
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 30vh;
+        text-align: center;
+    }
+    
+    #login img{
+        width: 80px;
+        height: 120px;
+        margin-top: -60px;
+    }
+    
+    #voltar{
+        margin-top: 20px;
+    }
+
+    .btn-logar{
+        background-color: #f79800;
+        border: 2px solid #db7d00;
+        color: white;
+        margin-top: 10px;
+        padding: 5px 20px;
+        height: 35px;
+        width: 87%;
+    }
+    
+    a{
+        display: block;
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+        text-align: right;
+        margin: 5px 15px ;
+    }
+    
+    a:hover{
+        color: #337180;
+    }
+    
+    body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #df4b6fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    input{
+        height: 30px;
+        width: 80%;
+        border: none;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: 5px;
+        margin-bottom: 10px;
+        padding-left: 30px;
+    }
+
+    input.email{
+        background-image: url(../images/icone-usuario.png);
+    }
+    
+    input.senha{
+        background-image: url(../images/icone-cadeado.png);
+    }
+
 }
 
-#login{
-    width: 500px;
-    height: 300px;
-    background-color: rgba(255,255,255,0.3);
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 30vh;
-    text-align: center;
+@media(min-width: 500px){
+    
+    #login{
+        width: 400px;
+        height: 270px;
+    }
+    
+    #login img{
+        width: 100px;
+        height: 120px;
+        margin-top: -60px;
+        margin-bottom: 10px;
+    }
+    
+    #voltar{
+        margin-top: 20px;
+    }
+
+    .btn-logar{
+        height: 45px;   
+    }
+    
+    a{
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+
+
 }
 
-#login img{
-    width: 120px;
-    height: 120px;
-    margin-top: -60px;
-    margin-bottom: 30px;
+@media(min-width: 768px){
+
+    #login{
+        width: 500px;
+    }
+
+    #login img{
+        width: 120px;
+        height: 120px;
+        margin-top: -60px;
+        margin-bottom: 30px;
+    }
+    
+    .btn-logar{
+        margin-top: 20px;
+        height: 45px;   
+    }
+    
+    a{
+        font-size: 20px;
+        margin: 20px 30px ;
+    }
+
 }
 
-input{
-    height: 30px;
-    width: 80%;
-    margin-bottom: 10px;
-    background-color: white;
-    padding-left: 30px;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: 5px;
+
+@media(min-width: 1024px){
+    
 }
 
-input.email{
-    background-image: url(../images/icone-usuario.png);
-}
-
-input.senha{
-    background-image: url(../images/icone-cadeado.png);
-}
-
-.btn-logar{
-    background-color: #f79800;
-    border: 2px solid #db7d00;
-    color: white;
-    margin-top: 20px;
-    padding: 5px 20px;
-    height: 45px;
-    width: 87%;
-}
-
-a{
-    display: block;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    text-align: right;
-    margin: 20px 30px ;
-}
-
-a:hover{
-    color: #337180;
-}
