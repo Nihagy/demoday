@@ -16,9 +16,8 @@
 @media(min-width: 320px){
 
     /* Layout */
-    
     #menu-logo{
-        max-width: 1440px;
+        /* max-width: 1440px; */
         height: 100%;
         margin: 0 auto;
         padding: 0 10px;
@@ -73,9 +72,14 @@
         text-decoration: none;
         /* color: #352f31; */
     }
-    
+
+/* =================================================== */
+
     footer{
-        height: 50px;
+        position: fixed;
+        bottom:0;
+        /* left:0; */
+        background-color: #f3c7d8;
     }
 
     header{
@@ -373,7 +377,7 @@
     }
 
     #img-login img{
-       position: absolute;
+        position: absolute;
     }
     
     #menu-logo{
@@ -543,6 +547,14 @@
     .nav-max a{
         font-size: 23px;
         padding-left: 10px;
+    }
+
+    .nav-min a:last-child{
+        padding-left: 0px;
+    }
+
+    .nav-max a:last-child{
+        padding-left: 0px;
     }
 
     .nav-min a{

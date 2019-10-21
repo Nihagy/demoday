@@ -5,7 +5,7 @@
 
 {% block content %}
 <head>
-    <link rel="stylesheet" href="{% static 'css/sform.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/scontato.css' %}"> 
     <title>Feira de Desenvolvimento de Software</title>
 </head>
     <article>
@@ -14,24 +14,24 @@
             <h3>Inscrição: Feira de Desenvolvimento</h3>
         
             <h5></h5>
-            <p>dfgklhjg'fph;kifdjl[[ptljy</p>
+            <p></p>
         
-            <form name="form_in" action="" method="POST">
+            <form name="form0in" action="" method="POST">
                     
-                <div class="form_cl1">
+                <div class="form-cl1">
                     <label id="nome" for="">Nome</label><br>
-                    <input class="ipt_boder" type="text" autofocus required>
+                    <input class="ipt-boder" type="text" autofocus required>
                 </div>
                 
-                <div class="form_cl2">
+                <div class="form-cl2">
                     <label for="">E-mail</label><br>
-                    <input class="ipt_boder" type="email" name="" id="" required>
+                    <input class="ipt-boder" type="email" name="" id="" required>
                 </div>
         
         
-                <div class="form_cl1">
+                <div class="form-cl1">
                     <label for="">Formação</label><br>
-                    <select id="form_formacao" class="ipt_boder" name="formacao" height="50" required>
+                    <select id="form-formacao" class="ipt-boder" name="formacao" height="50" required>
                         <option value=""></option>
                         <option value="">Bacharelado</option>
                         <option value="">Licenciatura</option>
@@ -40,42 +40,52 @@
                     </select>
                 </div>
                 
-                <div id="coluna2_linha1" class="form_cl2">
-                    <div class="cpf_documento">
+                <div id="coluna2-linha1" class="form-cl2">
+                    <div class="cpf-documento">
                         <label for="">CPF</label><br>
-                        <input id="cpf" class="ipt_boder" type="text" name="cpf" required>
+                        <input id="cpf" class="ipt-boder" type="text" name="cpf" required>
                     </div>
                     <div id="calendario">
                         <label for="">Data Nascimento</label><br>
-                        <input class="ipt_boder" type="date" name="calendario" >
+                        <input class="ipt-boder" type="date" name="calendario" >
                     </div>
                 </div>
                 
-                <div id="sobre_evento" class="form_c1l2" >
+                <div id="sobre-evento" class="form-c1l2" >
                     <div>
-                        <label for="">Como Soube do Evento?</label><br>
+                        <label for="">Preencha de acordo com o motivo</label><br>
                     </div>
         
                     <div>
                         <input type="radio" name="tevent" id="cface">
-                        <label for="cface">Facebook</label><br>
+                        <label for="cface">Se tornar um colaborador</label><br>
                         <input type="radio" name="tevent" id="cinsta">
-                        <label for="cinsta">Instagram</label><br>
+                        <label for="cinsta">Sugestão, critica ou elogio</label><br>
                         <input type="radio" name="tevent" id="cemail">
-                        <label for="cemail">E-mail</label><br>
+                        <label for="cemail">Dúvida</label><br>
                         <input type="radio" name="tevent" id="coutros" >
-                        <label for="coutros">Outros</label><br>
+                        <label for="coutros">esqueceu senha</label><br>
                     </div>
-                    <div id="camp_outros" >
-                        <label for="">Outros? Descreva</label><br>
-                        <input id="outra_opcao" class="ipt_boder"type="text" for="coutros" disabled="disabled" >
-                    </div>
-                    <div>
-                        <input id="btn_enviar" type="button" value="Enviar" >
+                    <div id="camp-outros" >
+                        <label for="">Outros Motivo</label><br>
+                        <input class="ipt-boder" id="outro-motivo" type="text" >
                     </div>
                 </div>
+
+                <div class="form-cl2">
+                    <div id="descreva">
+                        <label for="">Descreva o motivo abaixo:</label><br>
+                        <textarea name="" class="ipt-boder" id="desc-motivo" cols="30" rows="10"></textarea required>
+                    </div>
+                    <div>
+                        <input id="btn-enviar" type="button" value="Enviar" >
+                    </div>
+                </div>
+
+            </form>
+
+
         </section>
     </article>
 
-    </form>
 {% endblock %}
