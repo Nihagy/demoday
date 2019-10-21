@@ -14,6 +14,7 @@ py -m venv .venv
 
 Ativar virtualenv
 source .venv/bin/activate (Mac e Linux)
+
 source .venv/Scripts/activate (Windows - git bash)
 
 
