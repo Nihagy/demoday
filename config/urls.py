@@ -16,11 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from todas_por_todas import views
+# from django.views.generic import RedirectView
 
 
 # troca o caminho das url pelo caminha que ta com aspas
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home/', views.index),
     path('', views.index),
+    path('sobre/', views.sobre),
+    path('contato/', views.contato),
     path('login/', views.login),
 ]
+
+# urlpatterns += [
+#     path('', RedirectView.as_view(url='/home/')),
+# ]

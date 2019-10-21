@@ -1,0 +1,76 @@
+
+{% extends 'layout.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+<head>
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css'%}"> -->
+    <link rel="stylesheet" href="{% static 'css/sform.css'%}"> 
+    <!-- <script defer src="{% static 'js/script.js' %}"></script> -->
+    <title>Feira de Desenvolvimento de Software</title>
+</head>
+
+    <h3>Inscrição: Feira de Desenvolvimento</h3>
+
+    <form name="form_in" action="" method="POST">
+            
+        <div class="form_cl1">
+            <label id="nome" for="">Nome</label><br>
+            <input class="ipt_boder" type="text" autofocus required>
+        </div>
+        
+        <div class="form_cl2">
+            <label for="">E-mail</label><br>
+            <input class="ipt_boder" type="email" name="" id="" required>
+        </div>
+
+
+        <div class="form_cl1">
+            <label for="">Formação</label><br>
+            <select id="form_formacao" class="ipt_boder" name="formacao" height="50" required>
+                <option value=""></option>
+                <option value="">Bacharelado</option>
+                <option value="">Licenciatura</option>
+                <option value="">Tecnológico</option>
+                <option value="">Educação à Distância</option>
+            </select>
+        </div>
+        
+        <div id="coluna2_linha1" class="form_cl2">
+            <div class="cpf_documento">
+                <label for="">CPF</label><br>
+                <input id="cpf" class="ipt_boder" type="text" name="cpf" required>
+            </div>
+            <div id="calendario">
+                <label for="">Data Nascimento</label><br>
+                <input class="ipt_boder" type="date" name="calendario" >
+            </div>
+        </div>
+        
+        <div id="sobre_evento" class="form_c1l2" >
+            <div>
+                <label for="">Como Soube do Evento?</label><br>
+            </div>
+
+            <div>
+                <input type="radio" name="tevent" id="cface">
+                <label for="cface">Facebook</label><br>
+                <input type="radio" name="tevent" id="cinsta">
+                <label for="cinsta">Instagram</label><br>
+                <input type="radio" name="tevent" id="cemail">
+                <label for="cemail">E-mail</label><br>
+                <input type="radio" name="tevent" id="coutros" >
+                <label for="coutros">Outros</label><br>
+            </div>
+            <div id="camp_outros" >
+                <label for="">Outros? Descreva</label><br>
+                <input id="outra_opcao" class="ipt_boder"type="text" for="coutros" disabled >
+            </div>
+            <div>
+                <input id="btn_enviar" type="button" value="Enviar" >
+            </div>
+        </div>
+
+    </form>
+{% endblock %}
