@@ -4,19 +4,23 @@
 {% load staticfiles %}
 
 {% block content %}
-<head>
+<head>  
     <link rel="stylesheet" href="{% static 'css/scontato.css' %}"> 
-    <title>Feira de Desenvolvimento de Software</title>
+    <title>Contato PTP</title>
 </head>
     <article>
         <section>
+            <h3>Contato</h3>
+    
+            <p>Preeencha o formulario abaixo caso queira ser um coloborador, esqueceu a senha, tirar duvida, da uma sugestão ou fazer alguma critica</p>
+        </section>
 
-            <h3>Inscrição: Feira de Desenvolvimento</h3>
+        <section id="cont-form">       
+            
+            
+            <h3 id="titulo-form">Formulario de contato</h3>
         
-            <h5></h5>
-            <p></p>
-        
-            <form name="form0in" action="" method="POST">
+            <form name="form-in" action="" method="POST">
                     
                 <div class="form-cl1">
                     <label id="nome" for="">Nome</label><br>
@@ -83,9 +87,11 @@
                 </div>
 
             </form>
-
-
+            
         </section>
+
+
+        <section></section>
     </article>
 
 {% endblock %}

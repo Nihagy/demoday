@@ -1,31 +1,34 @@
 
-@media(min-width: 320PX){
-    article{
+@media(min-width: 320px){
+    /* article{
         position:relative;
-    }
+    } */
 
-    footer {
-        position: fixed;
-        bottom:0;
-        /* left:0; */
-    }
 
-    section{
-        margin: 0;
+
+    #cont-form{
         display: grid;
         grid-template-areas:    'nav' 'nav' 'nav' 'nav'
                                 'header' 'header' 'header' 'header'
                                 'form' 'form' 'form' 'form'
-                                'form' 'form' 'form' 'form';
+                                'form' 'form' 'form' 'form'
+                                'footer''footer''footer''footer';
         grid-template-columns: 25vw 25vw 25vw 25vw;
-        grid-template-rows: 5vh 5vh 100vh;
-        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+        grid-template-rows: 5vh 5vh 60vh;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     }
 
-    section{
-        padding-top: 120px;
+    /* footer {
+        grid-area: footer;
+        grid-column: 1/5;
+        grid-row: 4/5;
+        position: inherit;
+        left:0;
+    } */
+
+    #cont-form{
         background-color: #f3c7d8;
-        position: absolute;
+        position: relative;
     }
 
     #btn-enviar{
@@ -64,7 +67,6 @@
     }
 
     #coluna2-linha1 input{
-        margin-right: 10px;
         grid-column: 1/4;
         outline: none;
     }
@@ -80,6 +82,7 @@
     #descrev{
         margin: 0;
     }
+    
     #descreva textarea{
         margin-top: 10px;
         height: 20%;
@@ -112,7 +115,9 @@
         grid-area: form;
         grid-column: 1/5;
         grid-row: 3/5;
-        margin: 10px;
+        margin: 0 280px;
+        border: 1px solid;
+        padding: 20px;
     }
 
     form div{
@@ -120,20 +125,22 @@
     }
 
 
-    header{
+    #titulo-form{
         grid-area: nav;
         grid-column: 1/5;
         grid-row: 2;
         font-size: 10pt;
     }
 
-    header h3{
+    #titulo-form{
         font-size: 12pt;
-        margin: 0;
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
         color: #c3c5ce;
-        background-color: #747474;
-        padding: 10px;
-        border-radius: 5px 5px 0px 0px;
+        background-color: #df4b6f;
+        padding: 5px;
+        border-radius: 10px 10px 0px 0px;
     }
 
     label{
@@ -141,10 +148,27 @@
     }
 
     select.ipt-boder#form-formacao{
-        height: 30px
+        height: 30px;
     }
 
 
+
+    article section:first-child{
+        background-color: #f3c7d8;
+        font-size: 35px;
+        padding-top: 110px;
+    }
+
+    article section:first-child p{
+        font-size: 20px;
+    }
+
+    article section:last-child{
+        background-color: #f3c7d8;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+    }
 
 }
 
