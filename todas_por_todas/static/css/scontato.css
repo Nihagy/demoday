@@ -4,8 +4,6 @@
         position:relative;
     } */
 
-
-
     #cont-form{
         display: grid;
         grid-template-areas:    'nav' 'nav' 'nav' 'nav'
@@ -17,14 +15,6 @@
         grid-template-rows: 5vh 5vh 60vh;
         font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     }
-
-    /* footer {
-        grid-area: footer;
-        grid-column: 1/5;
-        grid-row: 4/5;
-        position: inherit;
-        left:0;
-    } */
 
     #cont-form{
         background-color: #f3c7d8;
@@ -157,17 +147,16 @@
         background-color: #f3c7d8;
         font-size: 35px;
         padding-top: 110px;
+        /* height: 70vh; */
     }
 
     article section:first-child p{
         font-size: 20px;
     }
 
-    article section:last-child{
-        background-color: #f3c7d8;
-        width: 100%;
-        height: 100px;
-        position: absolute;
+    footer{
+        background-color: #df4b6f;
+        width: 50%;
     }
 
 }

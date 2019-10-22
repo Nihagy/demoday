@@ -1,9 +1,6 @@
-/* Adicionando fonte robot como padrão no site */
 
-@font-face {
-    src: url('../font/Roboto-Regular.ttf');
-    font-family: 'roboto';
-}
+/* CSS Responsavel pelo layout no casa navbar */
+
 
 /* afeta todos os elementos */
 *{
@@ -67,21 +64,6 @@
         color: #df4b6f;
     }
     
-    /*  */
-    a{
-        text-decoration: none;
-        /* color: #352f31; */
-    }
-
-/* =================================================== */
-
-    footer{
-        position: fixed;
-        bottom:0;
-        /* left:0; */
-        background-color: #f3c7d8;
-    }
-
     header{
         position: fixed;
         width: 100%;
@@ -116,83 +98,12 @@
         width: 30px;
         height: 30px;
     }
-    /* ============================== */
-
-
-    /* Conteudo principal da página */
 
     .fundo-falso{
         width: 100%;
         height: 100px;
         background-color: #fcebf3;
     }
-
-    main{
-        font-size: 20px;
-    }
-
-    main section{
-        text-align: center;
-        font-family: "roboto";
-        font-size: 40px;
-        color: #352f31;
-        padding: 20px;
-    }
-
-    main section a{
-        text-decoration: underline;
-        font-size: 20px;
-        color: #352f31;
-    }
-
-    main section h3{
-        text-align: left;
-    }
-
-    main section p{
-        text-align: justify;
-        font-size: 14pt;
-    }
-
-    main section:nth-child(odd){
-        background-color: #fcebf3;
-    }
-    main section:nth-child(even){
-        background-color: #f3c7d8;
-    }
-
-    /* #faq a{
-        font-size: 20px;
-    } */
-
-    #software a{
-        text-decoration: underline;
-        font-size: 20px;
-        color: #352f31;
-    }
-
-    #software {
-        padding: 0;
-    }
-    
-    #software h3{
-        margin: 20px;
-    }
-    
-    #software img{
-        width: 80%;
-    }
-
-    #software p{
-        margin: 0 20px;
-    }
-    
-    #software iframe{
-        border: none;
-        height: 400px;
-    }
-
-
 
 }
 
@@ -215,50 +126,6 @@
     .logo{
         margin: auto auto;
     }
-
-    #software {
-        display: grid;
-        grid-template-areas: "texto soft";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        width: 100%;
-        padding: 20px;
-    }
-
-    #software a{
-        grid-area: soft;
-        grid-row: 1;
-        margin-top: 600px;
-    }
-    
-    #software img{
-        grid-area: texto;
-        grid-column: 1/3;
-        grid-row: 1;
-        width: 100%;
-    }
-    
-    #software h3{
-        margin-top: 40px;
-        grid-area: texto;
-        grid-row: 1;
-        height: 50px;
-    }
-   
-
-    #software p{
-        margin: 100px 0 0;
-        grid-area: texto;
-        grid-row: 1;
-    }
-
-    
-    iframe{
-        margin-top: 150px;
-        grid-area: soft;
-        margin-left: 30px;
-        width: 300px;
-    } 
 
 }
 
@@ -461,41 +328,11 @@
         height: 100px;
     }
 
-    #software a{
-        grid-area: soft;
-        grid-row: 2;
-        margin: auto auto 10px;
-    }
-
-    #software img{
-        grid-area: texto;
-        grid-column: 1/3;
-        grid-row: 1;
-        width: 100%;
-    }
-
-    #software p{
-        padding-top: 20px;
-    }
-
-    iframe{
-        margin-left: 50px;
-        width: 300px;
-        height: 400px;
-    } 
-
-    iframe{
-        margin-top: 130px;
-        margin-left: 50px;
-    } 
+    
 }
 
 
 @media(min-width: 834px){
-
-    iframe{
-        margin: 120px auto auto;
-    }
 
     .logo-max img{
         width: 280px;
@@ -517,10 +354,6 @@
 
 
 @media(min-width: 1060px){
-    
-    /* #menu-logo{
-        margin-right: 20px;
-    } */
 
     .logo{
         margin-left: 10px;
@@ -562,16 +395,7 @@
         padding-left: 10px;
     }
 
-    #software a{
-        grid-area: texto;
-        grid-row: 1;
-        margin-top: 450px;
-    }
 
-    iframe{
-        margin: auto auto;
-    }
-    
 
 }
 
@@ -584,6 +408,7 @@
     header{
         width: 1660px;
     }
+
     body{
         width: 1660px;
         margin: auto;
