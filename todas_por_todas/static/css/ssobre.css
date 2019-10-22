@@ -9,3 +9,8 @@ main{
     grid-template-rows: repeat(10vh*4);
     font-size: 20px;
 }
+section{
+    padding-top: 35000px;
+}
+
+

@@ -18,8 +18,8 @@
 
         <img src="{% static 'images/perfil.svg' %}">	
         
-        <form>
-            
+        <form action="/login/" method="post">
+            {% csrf_token %}
             <div>
                 <input class="email" type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
             </div>
@@ -27,7 +27,6 @@
             <div>
                 <input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha" required >
             </div>
-
             <div>
                 <input class="btn-logar" type="submit" value="Logar">
             </div>
