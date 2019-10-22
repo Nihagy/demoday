@@ -40,10 +40,12 @@
 
     .logo-max img{
         width: 320px;
+        color: #f3c7d8;
     }
 
     .logo-min img{
         width: 280px;
+        color: #df4b6f;
     }
     
     .menu-max{
@@ -140,11 +142,11 @@
     }
 
     .logo-max img{
-        width: 220px;
+        width: 270px;
     }
     
     .logo-min img{
-        width: 180px;
+        width: 300px;
     }
 
     .menu{
@@ -179,7 +181,7 @@
         position: absolute;
         width: 50%;
         background-color: #352f31;
-        opacity: 0.3 ;
+        opacity: 0.5 ;
     }
 
     nav ul{
@@ -254,7 +256,7 @@
     }
     
     .logo{
-        margin-left: 1px;
+        margin-left: 30px;
     }
 
     .logo-max img{
@@ -357,7 +359,7 @@
 @media(min-width: 1060px){
 
     .logo{
-        margin-left: 10px;
+        margin-left: 50px;
     }
 
     .logo-max img{

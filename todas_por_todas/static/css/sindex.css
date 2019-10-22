@@ -11,11 +11,19 @@
 @media(min-width: 320px){
 
     a{
-        text-decoration: none;
+        text-decoration: underline;
         color: #352f31;
     }
 
     main{
+        display: grid;
+        grid-template-areas:    'sobre'
+                                'quemsomos'
+                                'software'
+                                'faq'
+                                'contato';
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: repeat(10vh*6);
         font-size: 20px;
     }
 
@@ -27,14 +35,19 @@
         padding: 20px;
     }
 
+    main section img:first-child{
+        width: 100%;
+        height: 30px;
+        margin: 10px auto 0;
+    }
+
     main section a{
-        text-decoration: underline;
         font-size: 20px;
-        color: #352f31;
     }
 
     main section h3{
         text-align: left;
+        margin-bottom: 20px;
     }
 
     main section p{
@@ -49,26 +62,61 @@
         background-color: #f3c7d8;
     }
 
-    #software a{
-        text-decoration: underline;
-        font-size: 20px;
-        color: #352f31;
+    #sobre{
+        grid-area: sobre;
+        grid-column: 1/3;
+        grid-row: 1;   
     }
 
-    #software {
+    #quemsomos{
+        grid-area: sobre;
+        grid-column: 1/3;
+        grid-row: 2;   
+    }
+
+    #software{
+        grid-area: sobre;
+        grid-column: 1/3;
+        grid-row: 3;  
         padding: 0;
+    }
+
+    #faq{
+        grid-area: sobre;
+        grid-column: 1/3;
+        grid-row: 4;  
+    }
+
+    #contato{
+        grid-area: sobre;
+        grid-column: 1/3;
+        grid-row: 5;  
+    }
+
+    footer{
+        grid-area: sobre;
+        grid-column: 1/3;
+        grid-row: 6;  
+        width: 100%;
+        background-color: black;
+    }
+
+    .img-cl2, .img-cl1{
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
     }
     
     #software h3{
         margin: 20px;
     }
     
-    #software img{
-        width: 80%;
+    #software p{
+        margin: 20px;
     }
 
-    #software p{
-        margin: 0 20px;
+    #software img{
+        width: 90%;
     }
     
     #software iframe{
@@ -81,56 +129,150 @@
 
 @media(min-width: 600px){
 
-    #software {
+    /* colocando grid dentro de cada secao */
+    /* ======================================= */
+
+    main section {
         display: grid;
-        grid-template-areas: "texto soft";
+        grid-template-areas: 'texto' 'img';
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        width: 100%;
-        padding: 20px;
+        grid-template-rows: repeat(10vh*5);
+        width: 100%;    
+    }
+
+    /* ordem de acordo com o conteudo, 
+    mas nao to colocando o nome da area em todas section pq só tem duas colunas*/
+    /* =============================== */
+
+    #sobre img, h3, p, a{
+        grid-area: texto img;
+        grid-column: 1/3;
+        margin-top: 20px;
+    }
+
+    #quemsomos img, h3, p, a{
+        grid-area: texto img;
+        grid-column: 1/3;
+        margin-top: 20px;
+    }
+
+    #software img{
+        margin-top: 30px;
+        grid-column: 1/3;
+        grid-row: 1;
+        width: 94%;
+    }
+
+    #software h3{
+        grid-column: 1/3;
+        margin-top: 20px;
+        grid-row: 2;
+    }
+
+    #software p{
+        grid-column: 1;
+        margin-top: 20px;
+        grid-row: 3;
     }
 
     #software a{
-        grid-area: soft;
-        grid-row: 1;
-        margin-top: 600px;
+        grid-column: 2;
+        margin-top: 500px;
+        grid-row: 3;
     }
-    
-    #software img{
-        grid-area: texto;
+
+    #software iframe{
+        grid-column: 2/3;
+        grid-row: 1/6;
+        margin-top: 180px;
+        width: 280px;
+
+    }
+
+    #faq{
+        padding: 0;
+    }
+
+    #faq img{
         grid-column: 1/3;
         grid-row: 1;
-        width: 100%;
-    }
-    
-    #software h3{
-        margin-top: 40px;
-        grid-area: texto;
-        grid-row: 1;
-        height: 50px;
-    }
-   
-
-    #software p{
-        margin: 100px 0 0;
-        grid-area: texto;
-        grid-row: 1;
+        margin-top: 30px;
+        width: 94%;
     }
 
-    
-    iframe{
-        margin-top: 150px;
-        grid-area: soft;
-        margin-left: 30px;
-        width: 300px;
-    } 
+    #faq h3{
+        text-align: end;
+        grid-column: 2;
+        grid-row: 2;
+        margin: 20px;
+    }
+
+    #faq p{
+        grid-column: 2/3;
+        grid-row: 3;
+        margin: 0 20px 20px;
+    }
+
+    #faq a{
+        grid-column: 2/3;
+        grid-row: 4;
+    }
+
+    #faq img.img-cl1{
+        grid-column: 1;
+        grid-row: 2/5;
+        /* margin: 100px 20px 0; */
+        margin: auto auto 70px;
+    }
+
+
+
+    #contato{
+        padding: 0;
+    }
+
+    #contato img{
+        grid-column: 1/3;
+        grid-row: 1;
+        margin-top: 30px;
+        width: 94%;
+    }
+
+    #contato h3{
+        grid-column: 1/3;
+        grid-row: 2;
+        margin: 0 20px;
+    }
+
+    #contato p{
+        grid-column: 1;
+        grid-row: 3;
+        margin: 20px 20px;
+        padding-bottom: 20px;
+    }
+
+    #contato a{
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: auto;
+    }
+
+    #contato img.img-cl2{
+        grid-column: 2/3;
+        grid-row: 2/5;
+        margin: auto auto 30px;
+    }
+
+
+    /* ========================== */
+
 
 }
 
 
 @media(min-width: 769px){
 
-    #software a{
+    /* #software a{
         grid-area: soft;
         grid-row: 2;
         margin: auto auto 10px;
@@ -145,7 +287,7 @@
 
     #software p{
         padding-top: 20px;
-    }
+    } */
 
     iframe{
         margin-left: 50px;
@@ -172,11 +314,6 @@
 
 @media(min-width: 1060px){
 
-    #software a{
-        grid-area: texto;
-        grid-row: 1;
-        margin-top: 450px;
-    }
 
     iframe{
         margin: auto auto;
