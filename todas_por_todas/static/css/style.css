@@ -9,43 +9,7 @@
     box-sizing: border-box;
 }
 
-#quemsomos{
-    border-top: solid #df4b6f 4px;
-    border-bottom: solid #df4b6f 4px;
-}
-#faq{
-    border-top: solid #df4b6f 4px;
-    border-bottom: solid #df4b6f 4px;
-}
-#navstyle{
-    margin-left: 10px;
-    margin-right: 5px;
-}
 
-#BodySobre{
-    display: inline-block
-    justify-content: center;
-}
-#SobreSection1{
-    align-items: center;
-    
-}
-#img1{
-    width: 500px;
-    height: 500px;
-}
-.inside {
-    list-style-position: inside;
-  }
-ul.insidesquare{
-    padding: 10px;
-    color: black;  
-}
-
-#Cpu{
-    padding: 0px 0px 0px 10px;
-    color: black;
-}
 @media(min-width: 320px){
 
     /* Layout */
@@ -63,7 +27,6 @@ ul.insidesquare{
     .header-max{
         background-color: #df4b6f;
         height: 100px;
-        position: relative;
     }
 
     .header-min{
@@ -453,5 +416,4 @@ ul.insidesquare{
         width: 1660px;
         margin: auto;
     }
-    
 }
