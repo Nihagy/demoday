@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from todas_por_todas import views
+import todas_por_todas
 # from django.views.generic import RedirectView
 
 
