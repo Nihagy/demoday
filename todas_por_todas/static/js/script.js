@@ -15,7 +15,6 @@ function rolagem(){
         //efeito na nav bar
         cabecalho.classList.remove(`header-max`)
         cabecalho.classList.add(`header-min`)
-        // logo.setAttribute(`src`, `../images/login.png `)
         logo.classList.remove(`logo-max`)
         logo.classList.add(`logo-min`)
         navLetra.classList.remove(`nav-max`)
@@ -30,7 +29,6 @@ function rolagem(){
     }else if(pageYOffset <= 60 && cabecalho.classList.contains(`header-min`)) {
         cabecalho.classList.remove(`header-min`)
         cabecalho.classList.add(`header-max`)
-        // logo.setAttribute(`src`, `{% static 'images/teste.png' %}`)
         logo.classList.remove(`logo-min`)
         logo.classList.add(`logo-max`)
         navLetra.classList.remove(`nav-min`)
