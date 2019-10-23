@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href=" {% static 'images/tpt.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sfooter.css' %}">
     <script defer src="{% static 'js/script.js' %}"></script>
 </head>
 <body>
@@ -42,6 +43,20 @@
     {% block content %}
 
     {% endblock %}
-    
+    <footer>
+        <ul>
+            <li><a href="">Atualizações</a></li>
+            <li> <a href="">Localização</a></li>
+            <li> <a href="">Blog</a></li>
+        </ul>
+        <figure>
+            <a href="https://www.facebook.com"><img src="{% static 'images/face.png' %}" alt=""></a>
+            <a href="https://web.whatsapp.com"><img src="{% static 'images/whats.png' %}" alt=""></a>
+            <a href="https://www.instagram.com"><img src="{% static 'images/insta.png' %}" alt=""></a>
+            <a href="https://www.youtube.com"><img src="{% static 'images/youtube.png' %}" alt=""></a>
+            <a href="https://mail.google.com"><img src="{% static 'images/gmail.png' %}" alt=""></a>
+        </figure>
+        
+    </footer>
 </body>
 </html>

@@ -6,16 +6,16 @@
 {% block content %}
     <head>
         <link rel="stylesheet" href="{% static 'css/sindex.css' %}">
+        <link rel="stylesheet" href="{% static 'css/sfooter.css' %}">
         <title> - Todas por Todas</title>
     </head>
-    <!-- <div class="fundo-falso"></div> -->
+    <div class="fundo-falso"></div>
     <main>
         
         <section id="sobre">
             <img src="{% static 'images/linha2.svg' %}" alt="imagem de um linha rosa">
             <h3 id="TitleSobre">Sobre</h3>
-            <p>O Projeto tem como objetivo ajudar mulheres que sofrem algum tipo de abuso e assim oferecer um serviço para mulheres de diferentes idades, raças e crenças. </p>
-            <p>Teremos no nosso espaço reuniões com debates, palestras, sempre acompanhando, orientando e motivando.  Tudo isso com um espaço que transmite paz, e de confiança em que pode buscar ajuda como nosso sistema SAD(Sistema Anônimo de Denúncia). </p>
+            <p>O Projeto tem como objetivo ajudar mulheres que sofrem algum tipo de abuso e assim oferecer um serviço para mulheres de diferentes idades, raças e crenças. Teremos no nosso espaço reuniões com debates, palestras, sempre acompanhando, orientando e motivando.  Tudo isso com um espaço que transmite paz, e de confiança em que pode buscar ajuda como nosso sistema SAD(Sistema Anônimo de Denúncia). </p>
             <a href="/sobre/">Clique aqui para saber mais</a>
             <img class="img-cl2" src="{% static 'images/lugar.png' %}" alt="">
         </section>
@@ -24,7 +24,7 @@
             <img src="{% static 'images/linha2.svg' %}" alt="imagem de um linha rosa">
             <h3 id="TitleQuem">Quem Somos</h3>
             <p>Não temos uma identidade fixa somos apenas pessoas querendo ajudar outras pessoas, uma comunidade de ideias e cheia de criatividade que em conjunto pretende trazer outros projetos de diversas areas. Então se for para dizer quem somos, dizemos somos apenas pessoas </p>
-            <img class="img-cl1" src="{% static 'images/lugar.png' %}" alt="">
+            <img class="img-cl1" src="{% static 'images/about.jpg' %}" alt="">
         </section>
 
         <section id="software">
@@ -33,7 +33,7 @@
             <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0FrcPVx9Q5wkAFU8xbxFZt%2FSistema-An%25C3%25B4nimo-de-Denuncia-demoday%3Fnode-id%3D1%253A2%26scaling%3Dscale-down" allowfullscreen></iframe>
             <p>Para essa aplicação especifica, usaremos esse software para a base de nosso      sistema. Nosso foco é abordar o assunto da violência contra a mulher, além de mostrar a localidade para os usuários do sistema. Nosso sistema, inicialmente, terá duas opções: “denúncia de abusos” e “sobre o local”. <br>Podendo assim fazer uma denúncia, ou apenas aprender mais sobre o lugar que está localizado o totem.
             Para uma mulher se relacionar com o sistema ele tem duas opções, se cadastrar ou permanecer anônima. Sendo que ambas as entradas serão contabilizadas no banco de dados para realizar calculos estastistico. No banco de dados, já que citamos, usaremos a linguagem SQL, que por ser opensource, tem uma boa compatibilidade com sistemas Linux.<br><br>
-            <strong>Ao lado tem um portótipo do software </strong></p>
+            <strong>É possivel simular o software aqui no site </strong></p>
             <a href="/sobre/#sobre-software">Clique aqui para saber mais</a>
         </section>
 
@@ -50,16 +50,8 @@
             <h3 id="TitleContato">Contato</h3>
             <p>Caso queira ser um parceiro e colaborar com o projeto, mais informações  fazer um elogio, critica construtiva ou alguma duvida entre em contato abaixo</p>
             <a href="../contato/">entre em contato</a>
-            <img class="img-cl2" src="{% static 'images/lugar.png' %}" alt="">
+            <img class="img-cl2" src="{% static 'images/contact.png' %}" alt="">
         </section>
 
     </main>
-
-    <footer>
-        <!-- <p>fdhfgdjtyhkjt</p> -->
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </footer>
 {% endblock %}

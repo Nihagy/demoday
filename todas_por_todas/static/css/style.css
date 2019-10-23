@@ -9,6 +9,8 @@
     box-sizing: border-box;
 }
 
+/* ============================================= */
+/*  nav-bar */
 
 @media(min-width: 320px){
 
@@ -39,12 +41,13 @@
     }
 
     .logo-max img{
-        width: 320px;
+        width: 200px;
         color: #f3c7d8;
+        margin: 0 auto;
     }
 
     .logo-min img{
-        width: 280px;
+        width: 220px;
         color: #df4b6f;
     }
     
@@ -116,6 +119,14 @@
         padding: 0 16px;
     }
 
+    .logo-max img{
+        width: 270px;
+    }
+    
+    .logo-min img{
+        width: 300px;
+    }
+
 }
 
 
@@ -137,16 +148,7 @@
 @media(max-width: 768px){
 
     #menu-logo{
-        position: relative;
         grid-template-areas: "logo ... navbar" ;
-    }
-
-    .logo-max img{
-        width: 270px;
-    }
-    
-    .logo-min img{
-        width: 300px;
     }
 
     .menu{
@@ -372,8 +374,6 @@
 
     .nav-max{
         color: #f3c7d8;
-        /* padding-left: 300px; */
-        width: 700px;
     }
 
     .nav-min{
@@ -409,11 +409,11 @@
     }
     
     header{
-        width: 1660px;
+        width: 1440px;
     }
 
     body{
-        width: 1660px;
+        width: 1440px;
         margin: auto;
     }
 }
