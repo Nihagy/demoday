@@ -1,1 +1,1 @@
-web: gunicorn todasportodas.wsgi
+web: gunicorn todasportodas.wsgi --log-file -

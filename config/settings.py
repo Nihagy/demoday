@@ -26,7 +26,7 @@ SECRET_KEY = '9=1vkrghch4jr!@n8wx)oj)^4uv5fz41cayx4!h4uwj4(=s@01'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'todasportodas.herokuapp.com']
 
 
 # Application definition
@@ -120,6 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 django_heroku.settings(locals())
