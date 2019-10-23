@@ -1,5 +1,5 @@
 let cabecalho = document.querySelector(`header`)
-let logo = document.querySelector(`.logo-max img`)
+let logo = document.querySelectorAll(`.logo`)[0]
 let navLetra = document.querySelectorAll(`.nav-max`)[0]
 let menu = document.querySelectorAll(`.menu`)[0]
 let traco1 = document.querySelectorAll(`span`)[0]

@@ -62,14 +62,14 @@ html{
         grid-area: logo;
     }
 
-    .logo-max img{
+    .logo-max svg{
         width: 200px;
-        color: #f3c7d8;
+        fill: #f3c7d8;
     }
-
-    .logo-min img{
+    
+    .logo-min svg{
         width: 220px;
-        color: #df4b6f;
+        fill: #df4b6f;
     }
     
     .menu-max{
@@ -133,6 +133,14 @@ html{
 @media(min-width: 425px){
     #menu-logo{
         padding: 0 16px;
+    }
+
+    .logo-max svg{
+        width: 300px;
+    }
+    
+    .logo-min svg{
+        width: 270px;
     }
 
 }
@@ -272,12 +280,8 @@ html{
         margin-left: 30px;
     }
 
-    .logo-max img{
+    .logo-max svg{
         width: 220px;
-    }
-
-    .logo-min img{
-        width: 280px;
     }
 
     .nav-max{
@@ -360,14 +364,13 @@ html{
 
 @media(min-width: 834px){
 
-    .logo-max img{
-        width: 280px;
+    .logo-max svg{
+        width: 300px;
     }
-
-    .logo-min img{
-        width: 250px;
+    
+    .logo-min svg{
+        width: 300px;
     }
-
     .nav-max{
         padding-right: 40px;
     }
@@ -385,12 +388,12 @@ html{
         margin-left: 50px;
     }
 
-    .logo-max img{
-        width: 320px;
+    .logo-max svg{
+        width: 450px;
     }
 
-    .logo-min img{
-        width: 280px;
+    .logo-min svg{
+        width: 420px;
     }
 
     .nav-max{
