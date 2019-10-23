@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/scontato.css' %}"> 
     <title>Contato</title>
 </head>
+<div class="fundo-falso"></div>
     <article>
         <section>
             <h3>Contato</h3>
@@ -44,7 +45,7 @@
                 </div>
                 
                 <div id="coluna2-linha1" class="form-cl2">
-                    <div class="cpf-documento">
+                    <div id="cpf-documento">
                         <label for="">CPF</label><br>
                         <input id="cpf" class="ipt-boder" type="text" name="cpf" required>
                     </div>
@@ -56,7 +57,7 @@
                 
                 <div id="sobre-evento" class="form-c1l2" >
                     <div>
-                        <label for="">Preencha de acordo com o motivo</label><br>
+                        <label id="titulo-motivo" for="">Preencha de acordo com o motivo</label><br>
                     </div>
         
                     <div>
@@ -80,7 +81,7 @@
                         <label for="">Descreva o motivo abaixo:</label><br>
                         <textarea name="" class="ipt-boder" id="desc-motivo" cols="30" rows="10"></textarea required>
                     </div>
-                    <div>
+                    <div id="div-enviar">
                         <input id="btn-enviar" type="button" value="Enviar" >
                     </div>
                 </div>
@@ -90,39 +91,5 @@
         </section>
 
     </article>
-    <footer class="footer" role="contentinfo">
-	<div class="footer-menu">
-		<nav class="container">
-			<h2 class="title-footer">suporte e ajuda</h2>
-			<ul class="no-liststyle">
-				<li>
-					<a href="#" target="_blank" class="bg-customer-support">
-						<span class="visible-lg">Atendimento</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank" class="bg-my-tickets">
-						<span class="visible-lg">Meus Chamados</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank" class="bg-help-desk">
-						<span class="visible-lg">Central de Ajuda (Wiki)</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank" class="bg-statusblog">
-						<span class="visible-lg">Statusblog</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<div class="container footer-info">
-		<span class="last-access ico-screen"><strong>Último acesso: </strong>7/8/2011 22:35:49</span>
-		<div class="set-ip"><span class="set-ip"><strong>IP:</strong> 201.87.65.217</span></div>
-		<p class="copy-right">Copyright © 1997-2011 Locaweb Serviços de Internet S/A.</p>
-	</div>
-</footer>
 
 {% endblock %}
