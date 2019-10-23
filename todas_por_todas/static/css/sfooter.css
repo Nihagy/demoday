@@ -4,7 +4,7 @@
         display: grid;
         grid-template-areas: 'texto' 'imagens';
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100px;
+        grid-template-rows: 80px;
         max-width: 1440px;
         background-color: #f3c7d8;
         align-items: center;
@@ -42,6 +42,10 @@
 
 
 @media(min-width: 600px){
+
+    footer{
+        grid-template-rows: 100px;
+    }
 
     footer img{
         height: 30px;

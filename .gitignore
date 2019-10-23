@@ -1,3 +1,9 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+#staticfiles
+*.sqlite3
+
 # Environments
 .env
 .venv
@@ -5,6 +11,6 @@ env/
 venv/
 ENV/
 
+
 #IDEs
 .vscode
-.idea
