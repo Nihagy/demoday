@@ -94,16 +94,10 @@
         grid-row: 5;  
     }
 
-    /* footer{
-        grid-area: sobre;
-        grid-column: 1/3;
-        grid-row: 6;  
-    } */
-
     .img-cl2, .img-cl1{
         margin-top: 20px;
         width: 100%;
-        height: 200px;
+        height: 300px;
     }
     
     #software h3{
@@ -190,7 +184,6 @@
 
     #faq{
         padding: 0;
-        padding-bottom: 20px;
     }
 
     #faq img{
@@ -220,12 +213,9 @@
 
     #faq img.img-cl1{
         grid-column: 1;
-        grid-row: 3/5;
-        /* margin: 100px 20px 0; */
-        margin: auto 20px ;
+        grid-row: 2/5;
+        margin: 30px 20px ;
     }
-
-
 
     #contato{
         padding: 0;
@@ -261,7 +251,7 @@
     #contato img.img-cl2{
         grid-column: 2/3;
         grid-row: 2/5;
-        margin: auto auto 20px;
+        /* margin: auto 20px 20px; */
     }
 
 
@@ -275,7 +265,6 @@
 
 
     #software iframe{
-        margin-left: 50px;
         width: 300px;
         height: 400px;
         margin: auto auto;
@@ -322,7 +311,7 @@
     #sobre img.img-cl2{
         grid-column: 2/3;
         grid-row: 2/5;
-        margin: auto 20px;
+        margin: 30px 20px;
         padding-right: 20px;
     }
 
@@ -351,15 +340,15 @@
         margin: 0 20px 20px;
     }
 
-    /* #quemsomos a{
-        grid-column: 2/3;
-        grid-row: 4;
-    } */
-
     #quemsomos img.img-cl1{
         grid-column: 1;
-        grid-row: 3/4;
-        margin: auto 20px 30px;
+        grid-row: 2/4;
+        margin: 30px 30px 40px;
+        height: 300px;
+    }
+
+    #contato h3{
+        margin-top: 20px;
     }
 
 
@@ -378,27 +367,28 @@
 
     #software{
         padding-left: 30px;
+        padding-bottom: 50px;
     }
 
     #software img{
-        width: 97%; 
-        padding-right: 30px;
-        padding-left: 20px;
+        width: 100%; 
+        padding-right: 60px;
+        padding-left: 30px;
     }
 
-    #contato img:first-child{
-        width: 97%; 
-        padding-left: 30px
+    #software iframe{
+        grid-row: 2/5;
+        width: 350px;
+        height: 500px;
     }
+
 }
 
 
 @media(min-width: 1060px){
 
-
     iframe{
         margin: auto auto;
     }
     
-
 }
