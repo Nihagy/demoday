@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
- #importacao prar usar no heroku vai aqui
+import django_heroku #importacao prar usar no heroku vai aqui
 
 
 
@@ -28,7 +28,7 @@ SECRET_KEY = '9=1vkrghch4jr!@n8wx)oj)^4uv5fz41cayx4!h4uwj4(=s@01'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'meuappnaheroku.herokuapp.com']
 
 
 # Application definition
@@ -124,8 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # depende de qual tutorial ta vendo mais tem que importar um desses dois de baixo
-# heroku
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # heroku
 
 
-
-# heroku
+django_heroku.settings(locals())    # heroku
