@@ -185,6 +185,7 @@
     
 }
 
+/* ======================================= */
 
 @media(min-windth: 600px){
 
@@ -194,7 +195,9 @@
 
 
 /* @media(min-width: 768px){
+
     article{
+
         position:relative;
     }
 
@@ -283,6 +286,7 @@
     } */
 
     /* #sobre-evento{
+
         grid-column: 1/3;
     }
 
@@ -335,6 +339,7 @@
         height: 30px;
     } */
 
+    /* ======================================= */
 
 
     /* article section:first-child{
@@ -348,4 +353,5 @@
         font-size: 20px;
     }
 
+    
 } */
