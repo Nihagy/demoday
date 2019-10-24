@@ -64,7 +64,132 @@
     /* formulario
     ============================================================ */
 
-   
+    form{
+        display: grid;
+        grid-area: form;
+        grid-column: 1/3;
+        grid-row: 3/5;
+        /* margin: 10px; */
+        padding: 30px;
+        max-width: 1440px;
+    }
+
+    .form-cl1{
+        grid-column: 1/3;
+    }
+    
+    .form-cl1, .form-cl2 label{
+        font-weight: bold;
+    }
+    
+    .form-cl2{
+        grid-column: 1/3;
+    }
+    
+    .form-c1l2 div{
+        margin-bottom: 10px;
+    }
+    
+    .form-cl2 input{
+        width: 97%;
+        outline: none;
+    }
+    
+    .form-cl1 input, select{
+        width: 97%;
+        outline: none;
+    }
+    
+    #coluna2-linha1 input{
+        margin-right: 10px;
+        grid-column: 1/3;
+        grid-row: 4/6;
+        outline: none;
+    }
+    
+    #coluna2-linha1{
+        display: flex;
+    }
+    
+    #coluna2-linha1 div{
+        width: 50%;
+    }    
+    
+    .ipt-boder{
+        border-radius: 5px;
+        border-bottom: 2px solid;
+        height: 25px;
+        background-color: white;
+    }
+    
+    #sobre-evento{
+        grid-column: 1/3;
+    }
+    
+    #sobre-evento{
+        width: 97%;
+    }
+
+    #descreva textarea{
+        margin-top: 10px;
+        height: 20%;
+        width: 97%;
+    } 
+
+    #titulo-motivo{
+        color: #352f31;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #sobre-evento #outro-motivo{
+        width: 100%;
+    }
+    
+    div#calendario{
+        width: 48%;
+    }
+    
+    
+    form div{
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    
+    header{
+        grid-area: nav;
+        grid-column: 1/3;
+        grid-row: 2;
+        font-size: 10pt;
+    }
+
+    header h3{
+        font-size: 12pt;
+        margin: 0;
+        color: #c3c5ce;
+        background-color: #747474;
+        padding: 10px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    label{
+        color: #a1a1a2;
+    }
+    
+    select.ipt-boder#form-formacao{
+        height: 30px
+    }
+    
+    
+    
+}
+
+/* ======================================= */
+
+@media(min-windth: 600px){
+
+}
 
 
 /*
@@ -92,65 +217,6 @@
         background-color: #f3c7d8;
         position: relative;
     }
-
-    #btn-enviar{
-        margin: 10px 0px 0px 30px;
-        height: 30px;
-        width: 200px;
-        border-radius: 5px;
-        background-color: #f79800;
-        border: 2px solid #db7d00; 
-    }
-
-    .form-cl1{
-        grid-column: 1/3;
-    }
-
-    .form-cl1, .form-cl2 label{
-        font-weight: bold;
-    }
-
-    .form-cl2{
-        grid-column: 3/5;
-    }
-
-
-    .form-c1l2 div{
-        margin-bottom: 10px;
-    }
-
-    .form-cl2 input{
-        width: 90%;
-        outline: none;
-    }
-
-    .form-cl1 input, select{
-        width: 90%;
-        outline: none;
-    }
-
-    #coluna2-linha1 input{
-        grid-column: 1/4;
-        outline: none;
-    }
-
-    #coluna2-linha1{
-        display: flex;
-    }
-
-    #coluna2-linha1 div{
-        width: 50%;
-    }
-
-    #descrev{
-        margin: 0;
-    }
-    
-    #descreva textarea{
-        margin-top: 10px;
-        height: 20%;
-        width: 90%;
-    } 
 
     .ipt-boder{
         border-radius: 5px;
@@ -478,36 +544,6 @@
         padding: 20px;
     }
 
-    form div{
-        display: block;
-    }
-
-
-    #titulo-form{
-        grid-area: nav;
-        grid-column: 1/5;
-        grid-row: 2;
-        font-size: 10pt;
-    }
-
-    #titulo-form{
-        font-size: 12pt;
-        text-align: center;
-        width: 700;
-        margin: 0 auto;
-        color: #c3c5ce;
-        background-color: #df4b6f;
-        padding: 5px;
-        border-radius: 10px 10px 0px 0px;
-    }
-
-    label{
-        color: #352f31;
-    }
-
-    select.ipt-boder#form-formacao{
-        height: 30px;
-    }
 
 }
 */
